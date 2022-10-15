@@ -1,0 +1,8 @@
+#!/bin/sh
+CONFIG=$1
+. $CONFIG
+
+### WIRE-UP PROFILE
+echo '#WSLUTILS#'                       >> $DEFAULT_PROFILE_PATH
+echo 'source "$HOME/.wslutils_profile"' >> $DEFAULT_PROFILE_PATH
+echo '#end WSLUTILS#'                   >> $DEFAULT_PROFILE_PATH

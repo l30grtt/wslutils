@@ -1,0 +1,11 @@
+#!/bin/sh
+#WSLUTILS#
+
+### Aliases
+. "$HOME/.wslutils_aliases"
+
+### Git config
+gconflso
+
+### Misc
+fortune | cowsay

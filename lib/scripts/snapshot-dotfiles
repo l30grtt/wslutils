@@ -1,0 +1,11 @@
+#!/bin/sh
+CONFIG=$1
+. $CONFIG
+
+
+mkdir -p "$HOME/.wslutils"
+
+### BACKUP CURRENT PROFILE AND GIT CONFIG
+
+cp -v "$DEFAULT_PROFILE_PATH"   "$HOME/.wslutils/.profile.bak"
+cp -v "$DEFAULT_GITCONFIG_PATH" "$HOME/.wslutils/.gitconfig.bak"

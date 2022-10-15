@@ -1,0 +1,6 @@
+#!/bin/sh
+
+ENTRYPOINT="./boot.sh"
+ROOT="c/repo/wslutils"
+
+./wsl-run.sh $ENTRYPOINT $ROOT

@@ -1,0 +1,9 @@
+#!/bin/sh
+CONFIG=$1
+. $CONFIG
+
+### GENERATE SSH KEY PAIR
+yes '' | ssh-keygen -t rsa \
+                    -b 4096 \
+                    -C "wslutils" \
+                    -f "$HOME/.ssh/id_rsa_wslutils"

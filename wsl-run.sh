@@ -1,0 +1,6 @@
+#!/bin/sh
+
+ENTRYPOINT=$1
+ROOT=$2
+
+wsl -e $ENTRYPOINT $ROOT
